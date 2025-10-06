@@ -56,5 +56,63 @@ The project also explores **data transformation and normalisation** for preparin
 
 ---
 
-## 🧩 Project Workflow
+
+## 🧩 Workflow of the Project
+
+Below is a visual representation of the project pipeline — starting from raw retail data through cleaning, modelling, transformation, and reporting.
+
+            ┌────────────────────────────┐
+            │     Raw Retail Datasets     │
+            │ (dirty, missing, outlier)   │
+            └──────────────┬─────────────┘
+                           │
+                           ▼
+            ┌────────────────────────────┐
+            │   Task 1: Data Cleaning     │
+            │ - Fix anomalies & typos     │
+            │ - Validate field consistency│
+            │ - Handle duplicates         │
+            └──────────────┬─────────────┘
+                           │
+                           ▼
+            ┌────────────────────────────┐
+            │ Task 1: Missing Data        │
+            │ - Impute missing values     │
+            │ - Restore logical accuracy  │
+            │ - Validate numeric integrity│
+            └──────────────┬─────────────┘
+                           │
+                           ▼
+            ┌────────────────────────────┐
+            │ Task 1: Outlier Detection   │
+            │ - Identify anomalies in     │
+            │   delivery_charges          │
+            │ - Remove/adjust outliers    │
+            └──────────────┬─────────────┘
+                           │
+                           ▼
+            ┌────────────────────────────┐
+            │ Predictive Validation Model │
+            │ - Linear Regression (R²=0.995) │
+            │ - Validate delivery logic   │
+            │ - Evaluate seasonal trends  │
+            └──────────────┬─────────────┘
+                           │
+                           ▼
+            ┌────────────────────────────┐
+            │ Task 2: Data Reshaping      │
+            │ - Normalisation & Scaling   │
+            │ - Box-Cox / Log transforms  │
+            │ - Feature correlation check │
+            └──────────────┬─────────────┘
+                           │
+                           ▼
+            ┌────────────────────────────┐
+            │ Task 3: Documentation &     │
+            │ Reflective Report           │
+            │ - Methodology summary       │
+            │ - Insights & future scope   │
+            └────────────────────────────┘
+
+
 
