@@ -1,12 +1,60 @@
-# Retail-Data-Cleaning-and-Outlier-Detection-for-Transactional-Insights
+# Retail Data Cleaning and Outlier Detection for Transactional Insights
 
-This project involves creating an interactive R Shiny dashboard that visualises 22 years of financial data, analysing living costs, asset values, stock market performance, and currency fluctuations with the help of data visualisation efficiency by 25% for actionable financial decision-making.
+This project, developed as part of **FIT5196 – Data Science for Text Analytics (Assessment 2)** at Monash University, focuses on **data cleansing, outlier detection, and predictive validation** using Python.  
+It demonstrates a full end-to-end pipeline to detect anomalies, impute missing data, and model delivery-charge relationships for transactional retail datasets.
 
-Key achievements include:
+---
 
-1.Data Visualization: Developed an interactive R Shiny dashboard, transforming complex datasets into clear visualisations for better insights and faster decision-making.
-2.Correlation Analysis: Identified key relationships, such as inflation and gold values (0.75) and currency trends with stock market performance (-0.65), supporting strategic financial planning.
-3.Data Simplification: Simplified complex financial datasets into intuitive graphs and charts, enhancing data accessibility and understanding for non-technical stakeholders.
-This project involves creating an interactive R Shiny dashboard that visualises 22 years of financial data, analysing living costs, asset values, stock market performance, and currency fluctuations with the help of data visualisation efficiency by 25% for actionable financial decision-making. Key achievements include: 1.Data Visualization: Developed an interactive R Shiny dashboard, transforming complex datasets into clear visualisations for better insights and faster decision-making. 2.Correlation Analysis: Identified key relationships, such as inflation and gold values (0.75) and currency trends with stock market performance (-0.65), supporting strategic financial planning. 3.Data Simplification: Simplified complex financial datasets into intuitive graphs and charts, enhancing data accessibility and understanding for non-technical stakeholders.
+## Project Overview
 
-Skills: R (Programming Language) · Data Analysis · Data Visualization · Correlation Analysis · Exploratory Data Analysis
+The dataset represents **10,000 + online retail transactions** from a fictional Melbourne-based electronics store (DigiCO).  
+Due to data corruption and incomplete records, several files contained **dirty data, missing values, and outliers**.  
+This project addresses those issues through systematic **data wrangling, validation, and geospatial optimisation**.
+
+The project also explores **data transformation and normalisation** for preparing suburb-level property data for linear modelling (Task 2).
+
+---
+
+##  Key Achievements
+
+###  1. Data Cleaning and Validation  
+- Resolved **100 % of data inconsistencies** in the retail dataset.  
+- Handled anomalies through type correction, logical validation, and duplicate removal.  
+- Ensured structural integrity across all attributes before transformation.
+
+###  2. Geolocation Optimisation  
+- Implemented the **Haversine Formula** to compute accurate distances between customers and their nearest warehouses.  
+- Enhanced logistics insights and delivery-charge validation through spatial analytics.
+
+###  3. Predictive Modelling & EDA  
+- Built a **Linear Regression model** achieving **99.5 % R² accuracy** in validating delivery charges.  
+- Conducted comprehensive **Exploratory Data Analysis (EDA)** to uncover transactional trends and seasonality effects.  
+- Supported business decisions through interpretable model outputs and visualisations.
+
+###  4. Data Reshaping and Transformation (Task 2)  
+- Explored **standardisation, min-max scaling, log, power, and Box-Cox transformations** on property market data.  
+- Evaluated feature linearity and scaling suitability for regression modelling of `median_house_price`.  
+- Produced a structured comparative analysis to recommend the best transformation approach.
+
+###  5. Reflection and Documentation  
+- Compiled a professional report detailing methodology, justifications, and improvements for future iterations.  
+- Followed Monash’s Assessment 2 marking rubric and reproducibility standards.
+
+---
+
+##  Skills & Tools
+
+| Category | Tools & Libraries |
+|-----------|------------------|
+| **Languages** | Python 3.10 + |
+| **Data Analysis** | pandas · numpy · matplotlib · seaborn |
+| **Data Cleaning** | re · datetime · json · scikit-learn (preprocessing, imputation) |
+| **Machine Learning** | scikit-learn (linear_model) · numpy.linalg |
+| **Sentiment Analysis** | nltk.sentiment.vader (SentimentIntensityAnalyzer) |
+| **Environment** | Google Colab / Jupyter Notebook |
+| **Documentation** | Markdown · PDF reports · GitHub version control |
+
+---
+
+## 🧩 Project Workflow
+
